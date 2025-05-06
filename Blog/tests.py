@@ -14,6 +14,6 @@ class SayHelloViewTest(TestCase):
     def test_say_hi_response(self):
         response = self.client.get('/postUser/')
         self.assertEqual(response.status_code, 200)
-        self.assertJSONEqual(response.content.decode(), {"message": "how are you"})
+        self.assertJSONEqual(response.content.decode(), {"message ":"posted a user"})
 
 
